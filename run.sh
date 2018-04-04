@@ -27,7 +27,7 @@ mongodump \
     --archive \
     --gzip \
     --ssl \
-    | $FILEPATH$FILENAME
+    > $FILEPATH$FILENAME
 
 echo "Pushing the gzipped backup file into Azure Blob Storage under the backup container."
 az storage blob upload \
