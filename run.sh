@@ -1,5 +1,5 @@
-#This script assumes the above ENV variables ahave been set on container start via individual
-# -e entries or by referencing an env.list file via --env-file.
+# This script assumes the above ENV variables ahave been set on container start via individual
+# an env.list file via --env-file.
 
 echo "Logging into Azure using a service principle..."
 az login \
