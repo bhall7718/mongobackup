@@ -8,6 +8,10 @@
 ## What's Next for this Project?
 The [Roadmap](https://github.com/bhall7718/mongobackup/wiki/Roadmap) is located maintained in this GitHub's wiki section. Please give it a read to see what possible next steps are being considered.
 
+As the community has ideas about what they would like to see on the roadmap, please leave that feedback in this GitHub's Issues section under a ticket labled as a "enhancement".
+
+![enhancement example](https://raw.githubusercontent.com/bhall7718/mongobackup/master/Documentation/Images/feature_request.PNG)
+
 # Environment Variables List
 This solution contains a file labeled ```example-env.list``` that is just a *template* developers can follow to create their own private ```env.list``` file. Special care should be taken to not share or check-in the private ```env.list```, which is why both the ```.gitignore``` and ```.dockerignore``` files exclude it. The final ```env.list``` file is what would contain all the use-case specific usernames, passwords, host URLs, ports, and everything else needed by the main script found in ```run.sh```.
 
