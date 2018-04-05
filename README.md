@@ -3,7 +3,7 @@
 **Work in Progress**
 
 # Environment Variables List
-This solution contains a file labeled ```example-env.list``` that is a template developers can follow to create their own private ```env.list``` file. Special care should be taken to not share or check-in the private ```env.list```, which is why both the ```.gitignore``` and ```.dockerignore``` files exclude it. The final ```env.list``` file is what would contain all the use-case specific usernames, passwords, host URLs, ports, and everything else needed by the main script found in ```run.sh```.
+This solution contains a file labeled ```example-env.list``` that is just a *template* developers can follow to create their own private ```env.list``` file. Special care should be taken to not share or check-in the private ```env.list```, which is why both the ```.gitignore``` and ```.dockerignore``` files exclude it. The final ```env.list``` file is what would contain all the use-case specific usernames, passwords, host URLs, ports, and everything else needed by the main script found in ```run.sh```.
 
 In this section we will outline what the variable is, and where it can be found in a given Azure subscription.
 
