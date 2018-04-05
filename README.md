@@ -2,8 +2,9 @@
 **Work in Progress...**
 ## Setup Instructions
 1. (**optional**) Pull down the local source into a folder of your choosing. This is optional because you can technically perform a ```docker build``` pointing direct at the GitHub repository if no changes are intended.
-2. Create an ```env.list``` file that aligns to your environment. See Enviornment Variables List section to learn more.
-3. Build & Run with Docker (see the docker sections to learn more)
+2. Create an ```env.list``` file that aligns to your environment. See [Enviornment Variables List section](#environment-variables-list) to learn more.
+3. [Build](#docker-build-examples), [Run](#docker-run-examples), and [Start](#docker-start-examples) with Docker
+
 ## What's Next for this Project?
 The [Roadmap](https://github.com/bhall7718/mongobackup/wiki/Roadmap) is located maintained in this GitHub's wiki section. Please give it a read to see what possible next steps are being considered.
 
@@ -56,7 +57,7 @@ The variable will be a GUID found in the **Azure portal** under **Active Directo
 ## MONGO_COLLECTION
 *Work in Progress*
 
-# Docker Build Instructions
+# Docker Build Examples
 ## Directly from GitHub
 ``` sh
 docker build -t bhall7718/mongobackup https://github.com/bhall7718/mongobackup.git
@@ -67,7 +68,7 @@ docker build -t bhall7718/mongobackup https://github.com/bhall7718/mongobackup.g
 docker build -t bhall7718/mongobackup .
 ```
 
-# Docker Run Instructions
+# Docker Run Examples
 **Note:** *These examples assume you have created your own env.list located in the directory your commandline is initialized to. The examples also assume that bhall7718/mongobackup is the tagged name of your built image.*
 
 ### With Terminal Exposed
@@ -83,7 +84,7 @@ docker run --name mongobackupbox --env-file ./env.list bhall7718/mongobackup -it
 docker run --name mongobackupbox --env-file ./env.list bhall7718/mongobackup -d
 ```
 
-# Docker Start Instructions
+# Docker Start Examples
 **Note:** *These examples assume you have named your image "mongobackupbox" as outlined in the docker run examples above. If you have chosen a different name simply adjust accordingly.*
 
 ### With Terminal Exposed
