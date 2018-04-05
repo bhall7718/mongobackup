@@ -1,6 +1,11 @@
 # Overview
-
-**Work in Progress**
+**Work in Progress...**
+## Setup Instructions
+1. (**optional**) Pull down the local source into a folder of your choosing. This is optional because you can technically perform a ```docker build``` pointing direct at the GitHub repository if no changes are intended.
+2. Create an ```env.list``` file that aligns to your environment. See Enviornment Variables List section to learn more.
+3. Build & Run with Docker (see the docker sections to learn more)
+## What's Next for this Project?
+The [Roadmap](https://github.com/bhall7718/mongobackup/wiki/Roadmap) is located maintained in this GitHub's wiki section. Please give it a read to see what possible next steps are being considered.
 
 # Environment Variables List
 This solution contains a file labeled ```example-env.list``` that is just a *template* developers can follow to create their own private ```env.list``` file. Special care should be taken to not share or check-in the private ```env.list```, which is why both the ```.gitignore``` and ```.dockerignore``` files exclude it. The final ```env.list``` file is what would contain all the use-case specific usernames, passwords, host URLs, ports, and everything else needed by the main script found in ```run.sh```.
