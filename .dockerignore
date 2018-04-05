@@ -1,3 +1,18 @@
+# ignore the env.list, as it should never be copied or part of the build of an image
+# the env.list should only be used as an argument in the 'docker run' command
 env.list
-_config.yml
+example-env.list
+
+# ignore everything in the Documenation folder
 Documentation/*
+
+# ignore the .gitignore file
+.gitignore
+
+# ignore the .git hidden folder
+.git
+
+# ignore the _config.yml that is sometimes created by GitHub to style pages
+# while this solution does not currently use a _config.yml, if it ever does,
+# it need not be included in the docker build pipeline
+_config.yml
