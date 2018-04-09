@@ -94,11 +94,11 @@ docker build -t bhall7718/mongobackup .
 # Docker Run Examples
 **Note:** *These examples assume you have created your own env.list located in the directory your commandline is initialized to. The examples also assume that bhall7718/mongobackup is the tagged name of your built image.*
 
-### With Terminal Exposed
+### Without Terminal Exposed
 ``` sh
 docker run --name mongobackupbox --env-file ./env.list bhall7718/mongobackup
 ```
-### Without Terminal Exposed
+### With Terminal Exposed
 ``` sh
 docker run --name mongobackupbox --env-file ./env.list bhall7718/mongobackup -it
 ```
