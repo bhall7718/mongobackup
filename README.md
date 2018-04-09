@@ -41,25 +41,44 @@ The variable will be a GUID found in the **Azure portal** under **Active Directo
 ![TENANT_ID Example Image](https://raw.githubusercontent.com/bhall7718/mongobackup/master/Documentation/Images/tenant_id.jpg)
 
 ## SP_USER
-*Work in Progress*
+Service Principle User will come in the format of a GUID and can be found in Azure Active Directory under application registrations.
+
+![SP_USER Example Image](https://raw.githubusercontent.com/bhall7718/mongobackup/master/Documentation/Images/sp_user.jpg)
+
 ## SP_PASS
-*Work in Progress*
+Service Principle Password is otherwise known as a secret key. This key can be fetched from the **Azure Active Directory**, then **Applicatoin Registrations**, then under the keys blade. It should be noted that the key is only available for viewing uppon the initial creation of the key.
+
+![SP_PASS Example Image](https://raw.githubusercontent.com/bhall7718/mongobackup/master/Documentation/Images/sp_pass.jpg)
+
 ## STORAGE_ACCOUNT
-*Work in Progress*
+This variable is the unique identifier to the Azure Storage Blob resource in which the backups would be saved to. This value can be found in the **Azure Portal** by clicking on the **Azure Storage** resource, then clicking on the **Access Keys** blade.
+
+![STORAGE_ACCOUNT Example Image](https://raw.githubusercontent.com/bhall7718/mongobackup/master/Documentation/Images/storage_account.jpg)
+
 ## STORAGE_KEY
-*Work in Progress*
+This variable is the secret key needed to access the Azure Storage Blob resource in which the backups would be saved to. This value can be found in the **Azure Portal** by clicking on the **Azure Storage** resource, then clicking on the **Access Keys** blade.
+
+![STORAGE_KEY Example Image](https://raw.githubusercontent.com/bhall7718/mongobackup/master/Documentation/Images/storage_key.jpg)
+
 ## CONTAINER
-*Work in Progress*
+This variable is required, but can be set to whatever the developer desires. This is ultimately a folder name to store the backups in.
+
+**Note:** *The container does not need to exist yet, but it will not hurt anything if it does.*
+
 ## MONGO_HOST
-*Work in Progress*
+This is the address at which your MongoDB can be accessed. This could be an endpoint URL, or an IP address. No need to append the port on the end as that is taken care of in the **MONGO_PORT** variable.
+
 ## MONGO_PORT
-*Work in Progress*
+This is the port at which your MongoDB Host is listening on. If you are running MongoDB on CosmosDB then the port would be 10255.
+
 ## MONGO_USER
-*Work in Progress*
+This variable is the MongoDB username which the database will need to execute commands.
+
 ## MONGO_DB
-*Work in Progress*
+This variable is reserved to hold the name of the database that should be backed up.
+
 ## MONGO_COLLECTION
-*Work in Progress*
+This variable is reserved to hold the name of the collection that should be backed up.
 
 # Docker Build Examples
 ## Directly from GitHub
